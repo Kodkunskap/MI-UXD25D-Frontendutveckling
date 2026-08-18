@@ -1,0 +1,83 @@
+:root {
+    --primary-color: lightseagreen;
+    --seconday-color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ---- Generellt ---- */
+body {
+    background-color: #f4f4f8;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* ---- Sidhuvud ---- */
+#site-header {
+    background-color: var(--primary-color);
+    color: var(--seconday-color);
+    padding: 20px 30px;
+}
+
+#site-header h1 {
+    color: var(--seconday-color);
+}
+
+#site-header nav a {
+    color: var(--seconday-color);
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* ---- Huvudinnehåll ---- */
+#content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: var(--seconday-color);
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+.featured-card {
+    background-color: var(--primary-color);
+    color: var(--seconday-color);
+}
+
+.hero-card {
+    background-color: var(--seconday-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 30px;
+    width: 100%;
+}
+
+.hero-card h2 {
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* ---- Sidfot ---- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--seconday-color);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--seconday-color);
+}
