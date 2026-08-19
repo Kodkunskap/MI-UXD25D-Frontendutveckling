@@ -41,6 +41,11 @@ figcaption {
     width: 100%;
 }
 
+#logo {
+    display: inline-block;
+    width: 50%;
+}
+
 #logo img {
     height: 100px;
     vertical-align: middle;
@@ -53,4 +58,31 @@ h1 {
 
 img {
     border-radius: 10px;
+}
+
+nav {
+    display: inline-block;
+    width: 50%;
+    text-align: end;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav li {
+    display: inline;
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+dt {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+dd {
+    margin-inline-start: 0px;
+    font-style: italic;
+    padding-bottom: 20px;
 }
