@@ -1,0 +1,56 @@
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto; 
+}
+
+.spacer {
+    height: 1000px;
+}
+
+a {
+    color: lightseagreen;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightsalmon;
+}
+
+a:active {
+    font-size: 20px;
+}
+
+figure {
+    text-align: center;    
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+.full-width-image {
+    width: 100%;
+}
+
+#logo img {
+    height: 100px;
+    vertical-align: middle;
+}
+
+h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+img {
+    border-radius: 10px;
+}
