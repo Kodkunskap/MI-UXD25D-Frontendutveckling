@@ -92,3 +92,50 @@ tfoot tr:last-child td:last-child  {
 .center-text {
     text-align: center;
 }
+
+/*
+    Styling av formulär
+*/
+
+label, input, select, textarea, button {
+    display: block; 
+}
+label {
+    margin-bottom: 5px;
+}
+
+input, select, textarea, button {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+fieldset {
+    padding: 12px 20px 12px 20px;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+    border-radius: 4px;
+    border-style: solid;
+}
+
+
+
+/*
+    Avancerat. Det går utmärkt att skapa avancerade selektorer
+    som ändrar utseendet på relaterade objekt. 👇🏻
+*/
+label:has(+ input:required:valid)::before {
+    content: '✅ ';
+}
+
+label:has(+ select:required:valid)::before {
+    content: '✅ ';
+}
+
+label:has(+ input:optional:not(:placeholder-shown))::before,
+label:has(+ textarea:optional:not(:placeholder-shown))::before {
+    content: '✅ ';
+}
+
+

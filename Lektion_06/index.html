@@ -57,14 +57,14 @@
                 </tr>
                 <tr>
                     <td>16 Aug</td>
-                    <td>Grouptraining - Kettlebells</td>
+                    <td>Grouptraining - Kettlebell</td>
                     <td class="center-text">55:00</td>
                     <td class="center-text">130</td>
                     <td class="center-text">760</td>
                 </tr>
                 <tr>
                     <td>18 Aug</td>
-                    <td>Strength</td>
+                    <td>Styrka</td>
                     <td class="center-text">68:00</td>
                     <td class="center-text">120</td>
                     <td class="center-text">700</td>
@@ -81,6 +81,42 @@
             </tfoot>
 
         </table>
+
+        <h2>Spara ny träningsaktivitet</h2>
+        <form>
+
+            <fieldset>
+                <legend>Aktivitetsinformation</legend>
+                
+                <label for="activity-date">Aktivitetsdatum (obligatorisk)</label>
+                <input type="date" id="activity-date" name="activity-date" required>
+                
+                <label for="activity-name">Aktivitetsnamn</label>
+                <select id="activity-name" name="activity-name" required>
+                    <option value="">Välj en aktivitet</option>
+                    <option value="running">Löpning</option>
+                    <option value="boxing">Boxing</option>
+                    <option value="kettlebell">Grouptraining - Kettlebell</option>
+                    <option value="strength">Styrka</option>
+                </select>
+
+                <label for="activity-duration">Aktivitetstid</label>
+                <input type="text" name="activity-duration" id="activity-duration" placeholder="Minuter:Sekunder" required pattern="\d+:\d+">
+
+                <label for="activity-puls">Snittpuls</label>
+                <input type="number" name="activity-puls" id="activity-puls" placeholder="123">
+
+                <label for="activity-kcal">Energiförbrukning</label>
+                <input type="number" name="activity-kcal" id="activity-kcal" placeholder="123">
+
+                <label for="activity-note">Anteckning</label>
+                <textarea name="activity-note" id="activity-note" placeholder="Abc..."></textarea>
+
+                <button type="submit" value="save" name="button">Spara</button> 
+                <button type="reset">Återställ</button>
+            </fieldset>
+
+        </form>
 
 
     </main>
