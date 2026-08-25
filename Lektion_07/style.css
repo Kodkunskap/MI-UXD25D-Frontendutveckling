@@ -1,6 +1,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -10,6 +11,8 @@ body {
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
 }
 
 #wrapper {
@@ -50,40 +53,62 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr; 
+   
 }
 
 header div {
-    vertical-align: middle;
+    
     /* border: 1px dashed darkslategrey; */
+    display: flex;
+    align-items: center;
 }
 
 header div img {
     height: 80px;
+    vertical-align: middle;
+    padding-left: 20px;
 }
 
 nav {
     /* border: 1px dashed blueviolet; */
-    text-align: right;
+    padding: 20px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
 }
 
 nav ul, nav li {
     display: inline;
 }
 
+nav li::before {
+    content: ' | '
+}
+
+nav li:first-child:before {
+    content: '';
+}
+
 main {
     background-color: lightgrey;
+    padding: 20px;
+
     /* order: 2; */
     grid-area: mainelement;
 }
 
 aside {
     background-color: lightpink;
+    padding: 20px;
     /* order: 3; */
     grid-area: asideelement;
 }
 
 footer {
     background-color: lightyellow;
+    padding: 20px;
     /* grid-column: 1 / -1;
     grid-row: 3 / 4; */
     grid-area: footerelement;
