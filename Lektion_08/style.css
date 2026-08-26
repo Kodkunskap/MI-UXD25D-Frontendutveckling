@@ -1,0 +1,51 @@
+* {
+
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+#flexcontainer {
+    border: 1px dashed darkslategrey;
+
+    height: 500px;
+    width: 500px;
+    margin: 0 auto; 
+    
+    display: flex;
+    
+    /* row, row-reverse, column, column–reverse */
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /* Huvudaxel */
+    /* start, end, center, space-between, space-around, space-evenly */
+    justify-content: space-between; 
+
+    /* Tväraxel */
+    /* stretch, start, end, center */
+    align-items: stretch;
+
+}
+
+#flexitem1 {
+    background-color: lightseagreen;
+    width: 200px;
+}
+
+#flexitem2 {
+    background-color: lightsalmon;
+    height: 100px;
+    width: 200px;
+}
+
+#flexitem3 {
+    background-color: lightskyblue;
+    width: 200px;
+}
+
+#flexitem4 {
+    background-color: lime;
+    width: 200px;
+}

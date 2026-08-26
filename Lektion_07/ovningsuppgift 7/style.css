@@ -1,0 +1,41 @@
+
+header {
+    background-color: lightseagreen;
+    grid-area: logga;
+}
+
+nav {
+    background-color: lightsalmon;
+    grid-area: header;
+}
+
+#section1 {
+    background-color: lightgreen;
+}
+
+#section2 {
+    background-color: lightgray;
+}
+
+#section3 {
+    background-color: lightblue;
+}
+
+footer {
+    background-color: lightyellow;
+    grid-area: footer;
+}
+
+body {
+    width: 800px;
+    height: 100vh;
+    margin: 0 auto; 
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "logga    header   header"
+        "sektion1 sektion2 sektion3"
+        "footer   footer   footer";
+}
