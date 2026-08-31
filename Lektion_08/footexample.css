@@ -15,8 +15,13 @@ footer {
     padding: 60px;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+footer h2 {
+    font-size: 22px;
 }
 
 #footer_logo img {
@@ -33,7 +38,9 @@ footer {
 }
 
 footer > div {
-    width: 300px
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #footer_changed {
@@ -42,4 +49,11 @@ footer > div {
 
 #footer_address {
     text-align: center;
+}
+
+
+@media screen and (min-width: 1000px) {
+    footer {
+        flex-direction: row;
+    }
 }

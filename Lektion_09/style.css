@@ -1,0 +1,60 @@
+
+@font-face {
+    font-family: "Libre Baskerville";
+    src: local("Libre Baskerville"), url("assets/LibreBaskerville-VariableFont_wght.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caacupe+One&family=Pinyon+Script&display=swap');
+
+:root {
+    /* --secondary-color: seagreen; */
+    --secondary-color: rgb(32, 178, 170);
+    /* --secondary-color: #00FF00; */
+    /* --secondary-color: hsl(177, 82%, 70%); */
+}
+
+/* 
+    D   H
+    0   0
+    1   1
+    2   2 
+    .   .   
+    .   .
+    8   8
+    9   9
+    10  A
+    11  B
+    12  C
+    13  D
+    14  E
+    15  F
+    16  10
+
+
+*/
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+}
+
+h1 {
+    background-color: yellow;
+    /* opacity: 0.5; */
+}
+
+.baskerville {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Caacupe One", sans-serif;
+}
+
+.highlight {
+    font-family: "Pinyon Script", cursive;
+    font-size: 26px;
+    text-indent: 20px;
+    color: var(--secondary-color);
+}
