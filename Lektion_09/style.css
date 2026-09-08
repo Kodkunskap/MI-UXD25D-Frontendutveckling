@@ -58,3 +58,89 @@ h1, h2, h3, h4, h5, h6 {
     text-indent: 20px;
     color: var(--secondary-color);
 }
+
+button {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: skyblue;
+    color: white;
+    font-family: "Caacupe One", sans-serif;
+    font-size: 35px;
+
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+    /* animation: fontSizeAnimation 2s ease-in-out infinite alternate; */
+
+}
+
+button:hover {
+    transform: scale(1.2);
+    background-color: lightskyblue;
+    animation: shk-11a-c 0.5s ease-in-out;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.footnote {
+    padding-top: 50px;
+    font-size: 10px;
+    font-style: italic;
+    color: lightgray;
+}
+
+
+/* 
+    keyframes utöver to och from använda % 
+*/
+@keyframes fontSizeAnimation {
+    0% {
+        font-size: 35px;
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(12.5deg);
+    }
+    50% {
+        transform: rotate(-25deg);
+    }
+    75% {
+        transform: rotate(12.5deg) t;
+    }
+    100% {
+        font-size: 65px;
+        transform: rotate(25deg);
+    }
+}
+
+
+/*
+ Shaking Button keyframes from
+ https://codefronts.com/motion/css-shake-animation/shake-button-css-keyframes/
+*/
+@keyframes shk-11a-c {
+  12% {
+    translate: -6px 2px;
+    rotate: -1.2deg;
+  }
+
+  30% {
+    translate: 5px -2px;
+    rotate: 1deg;
+  }
+
+  48% {
+    translate: -4px 1px;
+    rotate: -.7deg;
+  }
+
+  66% {
+    translate: 2px -1px;
+    rotate: .4deg;
+  }
+
+  84% {
+    translate: -1px 0;
+    rotate: 0deg;
+  }
+}
