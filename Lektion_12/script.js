@@ -80,6 +80,7 @@ if(currentHour < 10) {
         gör-uttryck
     else
         gör-else-uttryck;
+
 */
 
 if (currentHour >= 10) {
@@ -101,10 +102,88 @@ if ("false") {
     document.write("\"false\" är en icke tom sträng -- därför true<br>");
 }
 
-let quizVariable = "false";
+// let quizVariable = "false";
 
-if (quizVariable === true) {
-    alert("Sant!");
+// if (quizVariable === true) {
+//     alert("Sant!");
+// } else {
+//     alert("False!");
+// }
+
+/*
+
+    if - else if - else
+
+    if (uttryck)
+        uttryck2
+    else if (uttryck3)
+        uttryck4
+    else if (uttryck5)
+        uttryck6
+    else 
+        uttryck7;
+
+*/
+
+/* 
+    Öppnar kl 10
+    Stänger kl 15
+*/
+
+currentHour = 15;
+if (currentHour < 10) {
+    console.log('Dörren är stängd (1)');
+} else if (currentHour >= 15) {
+    console.log('Dörren är stängd (2)');
 } else {
-    alert("False!");
+    console.log('Dörren är öppen');
+}
+
+let currentMonth = 22;
+
+if (currentMonth == 1) {
+    console.log('Januari');
+} else if (currentMonth == 2) {
+    console.log('Februari');
+} //...
+else if(currentMonth == 9) {
+    console.log('September');
+} // ..
+else {
+    console.log('Ogiltig månad');
+}
+
+/*
+
+    && AND (OCH) - båda skall vara sanna -> sant
+    || OR (ELLER) - minst e skall vara sann -> sant
+    ! NOT (ICKE) - sant -> falskt, falskt -> sant
+
+    uttryck1 <logisk operator> uttryck2
+
+*/
+
+currentHour = 12;
+if (currentHour >= 10 && currentHour < 15) {
+    console.log('Dörren är öppen');
+} else {
+    console.log('Dörren är strängd');
+}
+
+/*
+        Komma in på en bar
+        - vipPass == true
+        - Pengar > 200
+*/
+let vipPass = false;
+let money = 150; 
+
+if (vipPass || money > 200) {
+    console.log('Välkommen in!');
+} else {
+    console.log('Tyvärr, bankomaten finns ->');
+}
+
+if(!vipPass) {
+    console.log("Du kan köpa ett vippass för 1000kr!");
 }
