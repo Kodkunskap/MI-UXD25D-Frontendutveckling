@@ -61,7 +61,3 @@ for(let i=0; i<numeriskLista.length; i++) {
 }
 average = sum / numeriskLista.length; 
 console.log("Medel", average);
-
-
-let patrik = [];
-console.log(patrik, patrik.length);
