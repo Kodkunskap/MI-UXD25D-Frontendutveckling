@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandringsguiden (DOM Travesering)</title>
+    <style>
+        nav {
+            background-color: lightgray;
+        }
+
+        footer {
+            background-color: lightblue;
+        }
+
+        footer p {
+            font-weight: bold;
+        }
+
+        .first {
+            background-color: lightgrey;
+        }
+
+        .first h2 {
+            color: goldenrod;
+            font-weight: bold;
+        }
+
+        .templateRoute {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header id="siteHeader">
+        <h1>Vandringsguiden</h1>
+        <nav>
+            <a href="#">Hem</a>
+            <a href="#">Vandringar</a>
+            <a href="#">Utrustning</a>
+        </nav>
+    </header>
+
+    <main id="content">
+        <section class="route">
+            <h2>Kungsleden</h2>
+            <p>Längd: 45 mil</p>
+            <p>Svårighet: Medel</p>
+        </section>
+        <section class="route">
+            <h2>Sörmlandsleden</h2>
+            <p>Längd: 10 mil</p>
+            <p>Svårighet: Lätt</p>
+        </section>
+        <section class="route">
+            <h2>Padjelantaleden</h2>
+            <p>Längd: 14 mil</p>
+            <p>Svårighet: Svår</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Vandringsguiden 2026</p>
+        <p>Tick: <span id="tick">0</span></p>
+    </footer>
+
+
+    <section class="templateRoute">
+        <h2>TITEL</h2>
+        <p>LÄNGD</p>
+        <p>Svårighet</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
